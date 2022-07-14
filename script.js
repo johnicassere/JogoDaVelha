@@ -20,7 +20,7 @@ document.querySelectorAll('.item').forEach(item => {
 
 function itemClick(event){
 //console.log(event.target);
-let = item = event.target.getAttribute('data-item')
+let item = event.target.getAttribute('data-item')
 console.log("Clicou em ", item)
     if(playing && square[item] === ''){
         square[item] = player;
@@ -68,10 +68,10 @@ function togglePlayer(){
 
 function checkGame(){
     if(checkWinnerFor('x')){
-        warning = 'o "x" venceu';
+        warning = 'o " X " venceu';
         playing = false;
     }else if(checkWinnerFor('o')){
-        warning = 'o "o" venceu';
+        warning = 'o " O " venceu';
         playing = false;
     }else if(isFull()){
         warning = 'Deu empate';
